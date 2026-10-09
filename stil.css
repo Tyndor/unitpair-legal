@@ -1,0 +1,139 @@
+:root {
+  --grund: #f6f7f9;
+  --karte: #ffffff;
+  --tinte: #111418;
+  --tinte-leise: #6b7280;
+  --petrol: #0f766e;
+  --petrol-hauch: #e2f0ee;
+  --kante: #e5e7eb;
+
+  --rund-klein: 8px;
+  --rund-mittel: 12px;
+  --rund-gross: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 28px 20px 64px;
+  background: var(--grund);
+  color: var(--tinte);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+main { max-width: 44rem; margin: 0 auto; }
+
+header {
+  background: var(--karte);
+  border: 1px solid var(--kante);
+  border-radius: var(--rund-gross);
+  padding: 22px 24px;
+  margin-bottom: 28px;
+}
+
+.rubrik {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--petrol);
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 600;
+  margin: 4px 0 0;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 36px 0 10px;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 26px 0 8px;
+}
+
+a {
+  color: var(--petrol);
+  overflow-wrap: anywhere;
+}
+a:hover { text-decoration-thickness: 2px; }
+
+strong { font-weight: 600; }
+
+ul { padding-left: 1.3em; }
+li { margin: 6px 0; }
+
+address {
+  font-style: normal;
+  background: var(--karte);
+  border: 1px solid var(--kante);
+  border-radius: var(--rund-mittel);
+  padding: 16px 18px;
+  white-space: pre-line;
+  font-size: 16px;
+}
+
+.stand {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--tinte-leise);
+  margin: 10px 0 0;
+}
+
+code {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--petrol-hauch);
+  border-radius: var(--rund-klein);
+  padding: 1px 5px;
+}
+
+footer {
+  margin-top: 44px;
+  padding-top: 16px;
+  border-top: 1px solid var(--kante);
+  font-size: 14px;
+  color: var(--tinte-leise);
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 18px 8px 0;
+  font-weight: 600;
+}
+
+.stapel { list-style: none; padding: 0; margin: 24px 0 0; }
+
+.stapel li { margin: 0 0 12px; }
+
+.stapel a {
+  display: block;
+  background: var(--karte);
+  border: 1px solid var(--kante);
+  border-radius: var(--rund-mittel);
+  padding: 16px 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.stapel a:hover { background: var(--petrol-hauch); }
+
+.sprachen {
+  float: right;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--tinte-leise);
+}
+.sprachen a { margin: 0; font-weight: 400; }
+.sprachen [aria-current] { color: var(--tinte); font-weight: 600; }
